@@ -22,7 +22,6 @@ http://127.0.0.1:7768
 You can also connect to MySQL container on 127.0.0.1:7769
 ```
 $ mysql -h localhost -P 7769 -u root -p
-Enter password: [Enter your MYSQL_ROOT_PASSWORD]
 ```
 
 To get the MySQL's password, check the top of the docker container logs for it:
