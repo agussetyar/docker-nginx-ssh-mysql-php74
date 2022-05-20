@@ -4,6 +4,11 @@ A Dockerfile that installs the Ubuntu 20.04 with openssh-server, nginx, mariadb-
 
 ## Usage
 ```
+$ docker pull ghcr.io/agussetyar/docker-nginx-ssh-mysql-php74:latest
+```
+
+Or build the image yourself:
+```
 $ git clone https://github.com/agussetyar/docker-nginx-ssh-mysql-php74
 $ cd docker-nginx-ssh-mysql-php74
 $ docker-compose build && docker-compose up -d
