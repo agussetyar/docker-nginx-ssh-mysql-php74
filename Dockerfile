@@ -18,7 +18,7 @@ ARG SSH_USERNAME
 ARG SSH_PASSWORD
 ARG MYSQL_ROOT_PASSWORD
 
-# Setup Environtment
+# Setup Environment
 ENV TZ=Asia/Jakarta
 ENV MYSQL_ROOT_PASSWORD $MYSQL_ROOT_PASSWORD
 
@@ -44,7 +44,7 @@ RUN sed -i -e "s/post_max_size = 8M/upload_max_filesize = 100M/" /etc/php/7.4/fp
 RUN sed -i -e "s/;daemonize = yes/daemonize = no/" /etc/php/7.4/fpm/php-fpm.conf
 RUN sed -i -e "s/;catch_workers_output = yes/catch_workers_output = yes/" /etc/php/7.4/fpm/pool.d/www.conf
 
-# MuSQL config
+# MySQL config
 RUN sed -i -e "s/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/mariadb.conf.d/50-server.cnf
 RUN chown mysql:mysql /var/run/mysqld
 
