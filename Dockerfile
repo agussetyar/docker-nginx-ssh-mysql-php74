@@ -56,7 +56,7 @@ ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD ./start.sh /start.sh
 
 # Application
-COPY app /var/www/html
+COPY app /usr/share/nginx/html
 
 # Expose Ports
 EXPOSE 22
@@ -64,7 +64,7 @@ EXPOSE 80
 EXPOSE 3306
 
 # Volumes
-VOLUME ["/var/lib/mysql", "/var/www/html"]
+VOLUME ["/var/lib/mysql", "/usr/share/nginx/html"]
 
 # Run
 CMD ["/bin/bash", "/start.sh"]
