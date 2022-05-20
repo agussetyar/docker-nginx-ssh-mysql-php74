@@ -1,3 +1,7 @@
+Docker Container for NGINX, SSH, MariaDB (MySQL) and PHP 7.4
+
+A Dockerfile that installs the Ubuntu 20.04 with openssh-server, nginx, mariadb-server, php7.4.
+
 ## Usage
 ```
 $ git clone https://github.com/agussetyar/docker-nginx-ssh-mysql-php74
