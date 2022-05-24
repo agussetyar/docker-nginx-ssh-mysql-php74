@@ -9,7 +9,8 @@ services:
       args:
         SSH_USERNAME: localheartz
         SSH_PASSWORD: l0c4lh34rtz
-        MYSQL_ROOT_PASSWORD: 1nd0n3s14
+    environment:
+      MYSQL_ROOT_PASSWORD: 1nd0n3s14
     container_name: nginx_ssh_mysql_php74
     ports:
       - "7767:22"
